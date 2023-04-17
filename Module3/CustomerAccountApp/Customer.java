@@ -25,7 +25,6 @@ this.zip = zip;
 
 }
 
-//Accessor methods for four data field
 public void setName(String name){
 
 this.name = name;

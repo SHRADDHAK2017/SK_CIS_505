@@ -59,7 +59,7 @@ public void displayMenu(){
             System.out.println(" Enter <W/w> for withdraw ");
             System.out.println(" Enter <B/b> for balance ");
 	    
-
+            
             
             System.out.println(" Enter an option>: ");
             option = scanner.next().charAt(0);

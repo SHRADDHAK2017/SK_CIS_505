@@ -13,7 +13,7 @@ public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Customer customer = new Customer();
         Account account = new Account();
-        System.out.println(" welcome to the Customer Account App ");
+        System.out.println(" welcome to the Composer App ");
         System.out.println("\nEnter a customer ID: ");
         customerID = scanner.nextInt();
         customer = CustomerDB.getCustomer(customerID);

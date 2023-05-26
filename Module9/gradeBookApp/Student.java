@@ -48,16 +48,17 @@ public class Student {
             this.grade = grade;
         }
 
+        
+     
         @Override
-        public String toString() {
-            return "Student{" +
-                    "firstName='" + firstName + '\n' +
-                    ", lastName='" + lastName + '\n' +
-                    ", course='" + course + '\n' +
-                    ", grade='" + grade + '\n'+
-                    '}';
+    public String toString() {
+        return "Student{" +
+                "FirstName='" + firstName + '\'' +
+                ", LastName='" + lastName + '\'' +
+                ", Course='" + course + '\'' +
+                ", Grade='" + grade + '\'' +
+                '}';
 
 
-
-       }
+       
 }

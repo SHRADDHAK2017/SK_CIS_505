@@ -134,17 +134,18 @@ public class KulkarniGradeBookApp extends Application {
             String course = courseField.getText();
             String grade = gradeComboBox.getValue();
     
-            String entry = String.format("%s,%s,%s,%s", firstName, lastName, course, grade);
+           // String entry = String.format("%s,%s,%s,%s", firstName, lastName, course, grade);
     
             try (BufferedWriter writer = new BufferedWriter(new FileWriter(CSV_FILE, true))) {
                 if (Files.size(Path.of(CSV_FILE)) == 0) {
-                    writer.write("\n" + "First Name: " + firstName + "\n " + "Last Name: " + lastName + "\n " + "Course: " + course + "\n " + "Grades: " + grade);
                     writer.write("firstName,lastName,course,grade");
+                   // writer.write("firstName,lastName,course,grade");
                     writer.newLine();
                 }
     
-                writer.write(entry);
+                writer.write("First Name: " + firstName + "\n" + "Last Name: " + lastName + "\n" + "Course: " + course + "\n" + "Grade: " + grade + "\n");
                 writer.newLine();
+                writer.flush();
     
                 System.out.println("Grade entry saved successfully.");
     

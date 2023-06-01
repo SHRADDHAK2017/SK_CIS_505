@@ -1,3 +1,14 @@
+/*The @FXML annotations are used to inject the UI components defined in the FXML file into the 
+controller class.
+
+The saveGrades method is called when the "Save Grades" button is clicked.
+ It retrieves the values from the text fields and writes the data to the grades.csv file using a 
+ BufferedWriter. It also clears the form fields after saving the grades.
+
+The viewGrades method is called when the "View Grades" button is clicked. 
+It reads the data from the grades.csv file, excluding the first line, and displays it in the 
+gradesTextArea. */
+
 package SK_CIS_505.Module9.gradeBookApp;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;

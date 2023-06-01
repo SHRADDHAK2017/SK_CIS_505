@@ -1,3 +1,14 @@
+/*The class has private instance variables firstName, lastName, course, and grade representing 
+the attributes of a student.
+
+The class provides two constructors: a default constructor and a parameterized constructor 
+that accepts values for all the attributes.
+
+Getter and setter methods are provided for each attribute to access and modify the values.
+
+The toString method is overridden to provide a string representation of the Student object. 
+It returns a string that includes the values of the attributes. */
+
 package SK_CIS_505.Module9.gradeBookApp;
 
 public class Student {
@@ -59,6 +70,6 @@ public class Student {
                 ", Grade='" + grade + '\'' +
                 '}';
 
-
+    }
        
 }

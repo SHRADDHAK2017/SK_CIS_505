@@ -1,3 +1,18 @@
+/*This code is a JavaFX application for a grade book. Here's an explanation of the different parts:
+
+1. The code defines the necessary imports and the class `KulkarniGradeBookApp`, which extends `Application`.
+
+2. The `main` method is responsible for creating the directory and the `grades.csv` file if they don't exist.
+
+3. In the `start` method, the UI components such as labels, text fields, combo box, and buttons are created and added to a `GridPane` layout.
+
+4. The `clearForm` method is called when the "Clear" button is clicked and it clears the text fields and deselects the grade combo box.
+
+5. The `saveGrade` method is called when the "Save" button is clicked. It retrieves the values from the text fields and combo box, and writes the data to the `grades.csv` file.
+
+6. The `viewGrades` method is called when the "View Grades" button is clicked. It reads the data from the `grades.csv` file, excluding the first line, and displays it in the `gradesTextArea`.
+
+ */
 package SK_CIS_505.Module9.gradeBookApp;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -134,7 +149,7 @@ public class KulkarniGradeBookApp extends Application {
             String course = courseField.getText();
             String grade = gradeComboBox.getValue();
     
-           // String entry = String.format("%s,%s,%s,%s", firstName, lastName, course, grade);
+          
     
             try (BufferedWriter writer = new BufferedWriter(new FileWriter(CSV_FILE, true))) {
                 if (Files.size(Path.of(CSV_FILE)) == 0) {
